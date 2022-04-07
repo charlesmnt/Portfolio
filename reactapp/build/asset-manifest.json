@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c640fdb4.css",
+    "main.js": "/static/js/main.e26c70fe.js",
+    "static/media/PhotoID.jpg": "/static/media/PhotoID.9de913d3f5b5ce0981d2.jpg",
+    "static/media/cycling-picture_large.jpeg": "/static/media/cycling-picture_large.da0dfc33a27d4e348d0a.jpeg",
+    "static/media/roboto-all-400-normal.woff": "/static/media/roboto-all-400-normal.b5a0a0df312d3423493b.woff",
+    "static/media/background2.jpg": "/static/media/background2.3bec3f4cd20ab71003b4.jpg",
+    "static/media/background1.jpg": "/static/media/background1.f7efcce8261b1f7395ad.jpg",
+    "static/media/roboto-latin-400-normal.woff2": "/static/media/roboto-latin-400-normal.176f8f5bd5f02b3abfcf.woff2",
+    "static/media/roboto-cyrillic-ext-400-normal.woff2": "/static/media/roboto-cyrillic-ext-400-normal.dd55ea0a2e90d5d86e15.woff2",
+    "static/media/roboto-latin-ext-400-normal.woff2": "/static/media/roboto-latin-ext-400-normal.dcc07bcfcd475f34f20b.woff2",
+    "static/media/roboto-cyrillic-400-normal.woff2": "/static/media/roboto-cyrillic-400-normal.3605d18d8a4ce5bd39c3.woff2",
+    "static/media/roboto-greek-400-normal.woff2": "/static/media/roboto-greek-400-normal.352cc77aaed5208ce13c.woff2",
+    "static/media/roboto-vietnamese-400-normal.woff2": "/static/media/roboto-vietnamese-400-normal.52cebac009baf5592e7d.woff2",
+    "static/media/roboto-greek-ext-400-normal.woff2": "/static/media/roboto-greek-ext-400-normal.bc7ace6e50c7d9d4d959.woff2",
+    "index.html": "/index.html",
+    "main.c640fdb4.css.map": "/static/css/main.c640fdb4.css.map",
+    "main.e26c70fe.js.map": "/static/js/main.e26c70fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c640fdb4.css",
+    "static/js/main.e26c70fe.js"
+  ]
+}

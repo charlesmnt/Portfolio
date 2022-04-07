@@ -1,0 +1,256 @@
+@import './index.scss';
+//color/ui color variables
+
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+//split button mixin
+@mixin btn__split($foregroundColor, $backgroundColor, $textColor) {
+
+	// text-transform: uppercase;
+	// text-decoration: none;
+	// font-weight: 700;
+	// border: 0;
+	// text-align: center;
+	// // display: block;
+	// position: relative;
+	// letter-spacing: 0.15em;
+	// margin: 0 auto;
+	// padding: 1rem 2.5rem;
+	// background: transparent;
+	// outline: none;
+	// font-size: 100px;
+	// color: white;
+	// transition: all 0.5s $cubic-bezier 0.15s;
+	&::after,
+	&::before {
+		border: 0;
+		content: "";
+		position: absolute;
+		height: 49%;
+		width: 10%;
+		transition: all 0.5s $cubic-bezier;
+		z-index: -2;
+		border-radius: 50%;
+		//animation: grow 1s infinite;
+	}
+
+	&::before {
+		border: 0;
+		background-color: $backgroundColor;
+		top: -0.75rem;
+		left: 0.5rem;
+		animation: topAnimation 2s $cubic-bezier 0.25s infinite alternate;
+	}
+
+	&::after {
+		background-color: $foregroundColor;
+		top: 3rem;
+		left: 13rem;
+		animation: bottomAnimation 2s $cubic-bezier 0.5s infinite alternate;
+	}
+
+	&:hover {
+		color: $textColor;
+
+		&::before,
+		&::after {
+			top: 0;
+			//transform: skewx(-10deg);
+			height: 100%;
+			width: 100%;
+			border-radius: 0;
+			animation: none;
+		}
+
+		&::after {
+			left: 0rem;
+		}
+
+		&::before {
+			top: 0.5rem;
+			left: 0.35rem;
+		}
+	}
+}
+
+
+@keyframes topAnimation {
+	from {
+		transform: translate(-2rem, 0);
+	}
+
+	to {
+		transform: translate(-2rem, 3.5rem);
+	}
+}
+
+@keyframes bottomAnimation {
+	from {
+		transform: translate(-13rem, 0);
+	}
+
+	to {
+		transform: translate(1rem, 0);
+	}
+}
+
+.btn {
+	@include btn__split($colorPrimary, $colorSecondary, $white);
+}
+
+.foo {
+	// width: 200px;
+	// height: 200px;
+	background: white;
+	animation: corner 3s;
+	border-radius: 50%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	// position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	transform: scale(1.4);
+
+	// display: flex;
+	// justify-content: center;
+	// align-items: center;
+}
+
+$s: 100% / 8;
+$t: 0.001%;
+
+@keyframes corner {
+	#{$s * 0} {
+		border-top-left-radius: 1% 50%;
+	}
+
+	#{$s * 1} {
+		border-top-left-radius: 50%;
+		border-top-right-radius: 50%;
+	}
+
+	#{$s * 2} {
+		border-top-right-radius: 1% 50%;
+	}
+
+	#{$s * 2 + $t} {
+		border-top-right-radius: 50% 1%;
+	}
+
+	#{$s * 3} {
+		border-top-right-radius: 50%;
+		border-bottom-right-radius: 50%;
+	}
+
+	#{$s * 4} {
+		border-bottom-right-radius: 50% 1%;
+	}
+
+	#{$s * 4 + $t} {
+		border-bottom-right-radius: 1% 50%;
+	}
+
+	#{$s * 5} {
+		border-bottom-right-radius: 50%;
+		border-bottom-left-radius: 50%;
+	}
+
+	#{$s * 6} {
+		border-bottom-left-radius: 1% 50%;
+	}
+
+	#{$s * 6 + $t} {
+		border-bottom-left-radius: 50% 1%;
+	}
+
+	#{$s * 7} {
+		border-bottom-left-radius: 50%;
+		border-top-left-radius: 50%;
+	}
+
+	#{$s * 8} {
+		border-top-left-radius: 50% 1%;
+	}
+}
+
+.card {
+	transition: transform 1s;
+	transform-style: preserve-3d;
+	cursor: pointer;
+	position: relative;
+	height: 45%;
+	box-shadow: 2px 2px 12px 2px grey;
+
+}
+
+.card.isFlipped {
+	transform: rotateY(180deg);
+}
+
+.card.isFlipped360 {
+	transform: rotateY(360deg);
+	transition: transform 1s ease-in;
+}
+
+.card.initialPos {
+	transform: rotateY(0deg);
+}
+
+.paper {
+	display: flex;
+
+	align-items: center;
+	text-align: center;
+	vertical-align: center;
+	flex-direction: column;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	overflow: hidden;
+}
+
+.content {
+	text-align: center;
+}
+
+.front {
+	background-image: linear-gradient(to bottom right, $primary, $secondary);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.back {
+	transform: rotateY(180deg);
+}
+
+.containerSkills {
+	display: flex;
+	align-items: center; 
+	flex-direction: column; 
+	width: 100%;
+	margin-top: 2%;
+	background-image: url(./assets/background1.jpg);
+	// -webkit-background-size: cover;
+	// -moz-background-size: cover;
+	// -o-background-size: cover;
+	background-size: cover;
+}
+
+.containerProjects {
+	margin-top: 5%;
+	margin-bottom: 10%;
+	width: 100%;
+	background-image: url(./assets/background2.jpg);
+	// -webkit-background-size: cover;
+	// -moz-background-size: cover;
+	// -o-background-size: cover;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
