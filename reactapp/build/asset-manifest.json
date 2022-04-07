@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c640fdb4.css",
-    "main.js": "/static/js/main.e26c70fe.js",
+    "main.js": "/static/js/main.c9d26921.js",
     "static/media/PhotoID.jpg": "/static/media/PhotoID.9de913d3f5b5ce0981d2.jpg",
     "static/media/cycling-picture_large.jpeg": "/static/media/cycling-picture_large.da0dfc33a27d4e348d0a.jpeg",
     "static/media/roboto-all-400-normal.woff": "/static/media/roboto-all-400-normal.b5a0a0df312d3423493b.woff",
@@ -16,10 +16,10 @@
     "static/media/roboto-greek-ext-400-normal.woff2": "/static/media/roboto-greek-ext-400-normal.bc7ace6e50c7d9d4d959.woff2",
     "index.html": "/index.html",
     "main.c640fdb4.css.map": "/static/css/main.c640fdb4.css.map",
-    "main.e26c70fe.js.map": "/static/js/main.e26c70fe.js.map"
+    "main.c9d26921.js.map": "/static/js/main.c9d26921.js.map"
   },
   "entrypoints": [
     "static/css/main.c640fdb4.css",
-    "static/js/main.e26c70fe.js"
+    "static/js/main.c9d26921.js"
   ]
 }

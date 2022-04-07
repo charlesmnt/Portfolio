@@ -3,7 +3,7 @@ import { Button, Collapse, Box, TextField, makeStyles } from '@material-ui/core'
 import SendIcon from '@mui/icons-material/Send';
 import LoadingButton from '@mui/lab/LoadingButton';
 import DoneIcon from '@mui/icons-material/Done';
-import CloseIcon from '@material-ui/icons/Close';
+import CloseIcon from '@mui/icons-material/Close';
 
 const useStyles = makeStyles({
     root: {
